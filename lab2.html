@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piliin ang Pilipinas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Piliin ang <span>Pilipinas</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-carousel-slide d-flex align-items-center" style="background-image:url('Boracay-Aklan.webp');" role="img" aria-label="Boracay Island">
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="carousel-caption">
+            <h1 class="display-5 fw-bold">Discover the Philippines</h1>
+            <p class="d-none d-md-block">7,641 islands. Countless stories. One gallery.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-carousel-slide d-flex align-items-center" style="background-image:url('9iqtmvrsxuzy.jpg');" role="img" aria-label="Banaue Rice Terraces">
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="carousel-caption">
+            <h1 class="display-5 fw-bold">Mountains that Touch the Sky</h1>
+            <p class="d-none d-md-block">Ancient terraces carved by hand, generation after generation.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-carousel-slide d-flex align-items-center" style="background-image:url('4919399608_83cc5b80cd_b.jpg');" role="img" aria-label="Vigan Heritage Village">
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="carousel-caption">
+            <h1 class="display-5 fw-bold">Heritage Worth Wandering</h1>
+            <p class="d-none d-md-block">Cobblestone streets and living culture, town after town.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="section pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-geo-alt-fill fs-2 text-brand me-3"></i>
+            <div>
+              <h5 class="mb-1">12 Destinations</h5>
+              <p class="text-muted mb-0">Curated island, mountain, and heritage spots.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-camera-fill fs-2 text-brand me-3"></i>
+            <div>
+              <h5 class="mb-1">Photo Gallery</h5>
+              <p class="text-muted mb-0">Tap any photo for a closer look and details.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-signpost-split-fill fs-2 text-brand me-3"></i>
+            <div>
+              <h5 class="mb-1">Trip Ready</h5>
+              <p class="text-muted mb-0">Filter by category to plan your next getaway.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section bg-white">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Gallery &amp; Showcase</h2>
+        <p class="section-subtitle">
+          Twelve handpicked destinations across the Philippines.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="beach">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="" data-title="Boracay Island"
+               data-location="Aklan, Philippines"
+               data-desc="World-famous for its powdery white sand and turquoise water, Boracay's four-kilometer shoreline is the postcard image of Philippine beaches.">
+            <div class="img-wrap">
+              <img src="boracay-travel-guide-philippines-beach.webp" alt="Boracay Island" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-info-subtle text-info-emphasis rounded-badge mb-2">Beach</span>
+              <h3 class="card-title h6">Boracay Island</h3>
+              <p class="card-text">Powdery white sand, Aklan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="beach">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img02.jpg" data-title="El Nido, Palawan"
+               data-location="Palawan, Philippines"
+               data-desc="Towering limestone cliffs frame hidden lagoons and secret beaches, making El Nido one of the most photographed island destinations in the world.">
+            <div class="img-wrap">
+              <img src="8945561.jpg" alt="El Nido, Palawan" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-info-subtle text-info-emphasis rounded-badge mb-2">Beach</span>
+              <h3 class="card-title h6">El Nido, Palawan</h3>
+              <p class="card-text">Limestone cliffs &amp; lagoons.</p>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="nature">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img03.jpg" data-title="Chocolate Hills"
+               data-location="Bohol, Philippines"
+               data-desc="Over 1,200 uniformly shaped mounds turn cocoa-brown during the dry season, forming a surreal landscape unlike anywhere else on Earth.">
+            <div class="img-wrap">
+              <img src="chocolate-hills-bohol-philippines-kahibalo-foundation.jpg" alt="Chocolate Hills" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-success-subtle text-success-emphasis rounded-badge mb-2">Nature</span>
+              <h3 class="card-title h6">Chocolate Hills</h3>
+              <p class="card-text">1,200+ cone-shaped hills.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="nature">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img04.jpg" data-title="Banaue Rice Terraces"
+               data-location="Ifugao, Philippines"
+               data-desc="Carved into the mountainside over 2,000 years ago by the Ifugao people, these terraces are often called the Eighth Wonder of the World.">
+            <div class="img-wrap">
+              <img src="OIP.webp" alt="Banaue Rice Terraces" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-success-subtle text-success-emphasis rounded-badge mb-2">Nature</span>
+              <h3 class="card-title h6">Banaue Rice Terraces</h3>
+              <p class="card-text">2,000-year-old terraces.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="nature">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img05.jpg" data-title="Mayon Volcano"
+               data-location="Albay, Philippines"
+               data-desc="Renowned for its almost perfect cone, Mayon is the most active volcano in the Philippines and a favorite subject for photographers.">
+            <div class="img-wrap">
+              <img src="1998202-2121x1414-desktop-hd-mayon-volcano-wallpaper.jpg" alt="Mayon Volcano" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-success-subtle text-success-emphasis rounded-badge mb-2">Nature</span>
+              <h3 class="card-title h6">Mayon Volcano</h3>
+              <p class="card-text">The perfect cone, Albay.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="beach">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img06.jpg" data-title="Siargao Island"
+               data-location="Surigao del Norte, Philippines"
+               data-desc="The surfing capital of the Philippines, Siargao pairs world-class waves at Cloud 9 with laid-back island life and swaying palm trees.">
+            <div class="img-wrap">
+              <img src="22b60b63d43c29f0ad8b2035d2bb050f.jpg" alt="Siargao Island" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-info-subtle text-info-emphasis rounded-badge mb-2">Beach</span>
+              <h3 class="card-title h6">Siargao Island</h3>
+              <p class="card-text">Surfing capital of PH.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="heritage">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img07.jpg" data-title="Vigan Heritage Village"
+               data-location="Ilocos Sur, Philippines"
+               data-desc="A UNESCO World Heritage Site, Vigan preserves cobblestone streets and Spanish colonial houses that transport visitors back in time.">
+            <div class="img-wrap">
+              <img src="9547334.webp" alt="Vigan Heritage Village" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-warning-subtle text-warning-emphasis rounded-badge mb-2">Heritage</span>
+              <h3 class="card-title h6">Vigan Heritage Village</h3>
+              <p class="card-text">Spanish colonial streets.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="beach">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img08.jpg" data-title="Coron, Palawan"
+               data-location="Palawan, Philippines"
+               data-desc="Famous for WWII shipwreck diving and the impossibly clear waters of Kayangan Lake, Coron is a bucket-list stop for island hoppers.">
+            <div class="img-wrap">
+              <img src="Paolyn-Houseboats-Coron-Palawan-PI.jpg" alt="Coron, Palawan" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-info-subtle text-info-emphasis rounded-badge mb-2">Beach</span>
+              <h3 class="card-title h6">Coron, Palawan</h3>
+              <p class="card-text">Shipwrecks &amp; blue lakes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="nature">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img09.jpg" data-title="Kawasan Falls"
+               data-location="Cebu, Philippines"
+               data-desc="A three-tiered waterfall famous for its striking turquoise pools, Kawasan Falls is one of Cebu's most popular canyoneering spots.">
+            <div class="img-wrap">
+              <img src="352237980_951897609388213_4642238981522303248_n-min.jpg" alt="Kawasan Falls" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-success-subtle text-success-emphasis rounded-badge mb-2">Nature</span>
+              <h3 class="card-title h6">Kawasan Falls</h3>
+              <p class="card-text">Turquoise waterfall pools.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="heritage">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img10.jpg" data-title="Baguio, Session Road"
+               data-location="Benguet, Philippines"
+               data-desc="Known as the Summer Capital of the Philippines, Baguio offers cool mountain air, pine trees, and a lively arts and market culture.">
+            <div class="img-wrap">
+              <img src="R.jpg" alt="Baguio, Session Road" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-warning-subtle text-warning-emphasis rounded-badge mb-2">Heritage</span>
+              <h3 class="card-title h6">Baguio City</h3>
+              <p class="card-text">The Summer Capital.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="heritage">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img11.jpg" data-title="Sagada"
+               data-location="Mountain Province, Philippines"
+               data-desc="Home to centuries-old hanging coffins and misty pine forests, Sagada blends indigenous tradition with quiet mountain adventure.">
+            <div class="img-wrap">
+              <img src="Sumaguing-Cave-Sagada.jpg" alt="Sagada" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-warning-subtle text-warning-emphasis rounded-badge mb-2">Heritage</span>
+              <h3 class="card-title h6">Sagada</h3>
+              <p class="card-text">Hanging coffins &amp; pines.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="beach">
+          <div class="card gallery-card h-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-img="images/img12.jpg" data-title="Bantayan Island"
+               data-location="Cebu, Philippines"
+               data-desc="A quieter alternative to Boracay, Bantayan Island offers long stretches of soft white sand without the crowds.">
+            <div class="img-wrap">
+              <img src="7baddf5c13554193d6bd34da40bb391e.jpg" alt="Bantayan Island" loading="lazy" />
+              <div class="cap-overlay"><small><i class="bi bi-zoom-in me-1"></i>View details</small></div>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-info-subtle text-info-emphasis rounded-badge mb-2">Beach</span>
+              <h3 class="card-title h6">Bantayan Island</h3>
+              <p class="card-text">Quiet white-sand shores.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Destination</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="imageModalImg" src="" alt="" class="img-fluid rounded mb-3 w-100" style="aspect-ratio:16/9; object-fit:cover;" />
+          <p class="text-muted mb-1"><i class="bi bi-geo-alt-fill me-1"></i><span id="imageModalLocation"></span></p>
+          <p id="imageModalDesc" class="mb-0"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-lg-6">
+          <img src="R (1).jpg" alt="Coron" class="img-fluid rounded shadow-sm" />
+        </div>
+        <div class="col-12 col-lg-6">
+          <h2 class="section-title">About This Showcase</h2>
+          <p>
+            Piliin ang Pilipinas ("Choose the Philippines") is a website for showcasing the 
+            beauty and diversity of the Philippines.
+          </p>
+          <p class="mb-4">
+            The gallery features twelve handpicked destinations across the country, 
+            including beaches, mountains, and heritage sites.
+
+          <div class="row text-center g-3">
+            <div class="col-6 col-md-3">
+              <div class="stat-box">
+                <div class="stat-number">12</div>
+                <div class="text-muted small">Destinations</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-box">
+                <div class="stat-number">3</div>
+                <div class="text-muted small">Categories</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-box">
+                <div class="stat-number">7,641</div>
+                <div class="text-muted small">PH Islands</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-box">
+                <div class="stat-number">3</div>
+                <div class="text-muted small">Major islands</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">A quick guide before you plan your trip.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  What is the best time to visit the Philippines?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The dry season, from November to May, is generally the best time to visit —
+                  especially for island destinations like Boracay, Siargao, and Palawan.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Do I need to book island tours in advance?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  For popular spots like El Nido and Coron, booking a few days ahead during
+                  peak season (December–April) helps you avoid sold-out boat tours.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Is Sagada far from Baguio?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Sagada is roughly a 5-6 hour bus ride from Baguio, making the two a popular
+                  combined itinerary for mountain travelers.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-7">
+          <div class="text-center mb-4">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Questions about a destination? Send a quick message.</p>
+          </div>
+
+          <div id="contactSuccess" class="alert alert-success d-none" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i>Thanks! Your message has been noted. (Demo form — no data is sent.)
+          </div>
+
+          <form id="contactForm" class="row g-3 needs-validation" novalidate>
+            <div class="col-12 col-md-6">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" required />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-primary px-4">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-3">
+          <h5 class="text-white">Piliin ang Pilipinas</h5>
+          <p class="small mb-0">A website showcasing the beauty of the Philippines.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="text-white">Explore</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="text-white">Info</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3">
+          <h6 class="text-white">Follow</h6>
+          <div>
+            <a href="#" class="me-3 fs-5" data-bs-toggle="tooltip" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-3 fs-5" data-bs-toggle="tooltip" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-5" data-bs-toggle="tooltip" title="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4 mb-3" />
+      <p class="text-center small mb-0">&copy; 2026 Piliin ang Pilipinas — CCS114 Midterm Laboratory 2.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
